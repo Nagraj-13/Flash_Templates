@@ -17,7 +17,6 @@ A blazing-fast **Vite + React** boilerplate, fully equipped with **Redux, ShadCN
 
 ## 📦 Installation & Setup  
 
-1️⃣ **Clone this repository:**  
+1️⃣ **Intsallation:**  
 ```sh
-git clone <repo-url> your-project-name  
-cd your-project-name
+npm create@flash <project_name>
