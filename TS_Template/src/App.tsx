@@ -48,7 +48,7 @@ function App() {
                 </code>
                 <br />
                 <code className="block border bg-gray-900 p-1 rounded border-dashed border-gray-600 mt-2">
-                  npm create@flash {"<project_name>"}
+                npx flash_create {"<project_name>"}
                 </code>
                 and you're in the code cosmos.
               </p>
