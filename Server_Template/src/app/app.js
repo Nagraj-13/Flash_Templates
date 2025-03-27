@@ -1,16 +1,18 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import cors from 'cors';
-import Logger from '../config/logger.config.js';
-import responseHandler from '../utils/responseHandler.js';
-import { errorHandler } from '../middlewares/error.middleware.js';
+import express from "express";
+import bodyParser from "body-parser";
+import cors from "cors";
+import Logger from "../config/logger.config.js";
+import responseHandler from "../utils/responseHandler.js";
+import { errorHandler } from "../middlewares/error.middleware.js";
 
-const logger =  Logger(import.meta.url);
+const logger = Logger(import.meta.url);
 const app = express();
 
 // =========================Middlewares===========================
 const configureMiddleware = () => {
-    app.use(cors({ origin: process.env.CORS_ORIGIN || '*', credentials: true }));
+    app.use(
+        cors({ origin: process.env.CORS_ORIGIN || "*", credentials: true })
+    );
     app.use(express.json());
     app.use(express.urlencoded({ extended: true }));
     app.use(bodyParser.json());
@@ -25,7 +27,7 @@ const configureRoutes = () => {
         return responseHandler.sendError(res, {
             message: "Not Found",
             httpCode: 404,
-            isOperational: true
+            isOperational: true,
         });
     });
     // Add your API routes here
@@ -34,7 +36,7 @@ const configureRoutes = () => {
 
 // =========================Error Handlers=======================
 const configureErrorHandlers = () => {
-    app.use(errorHandler);  // General error handling middleware
+    app.use(errorHandler); // General error handling middleware
 };
 
 // =========================App Configuration======================

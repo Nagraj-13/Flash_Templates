@@ -9,8 +9,7 @@
         "serve": "vite preview",
         "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
         "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
-        "format": "prettier --write .",
-        "prepare": "husky install"
+        "format": "prettier --write ."
     },
     "lint-staged": {
         "*.js,*.jsx,*.ts,*.tsx": [
