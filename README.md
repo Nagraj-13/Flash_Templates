@@ -20,3 +20,5 @@ A blazing-fast **Vite + React** boilerplate, fully equipped with **Redux, ShadCN
 1️⃣ **Intsallation:**  
 ```sh
 npm create@flash <project_name>
+
+```
