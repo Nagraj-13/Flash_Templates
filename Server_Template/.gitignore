@@ -7,7 +7,6 @@ npm-debug.log
 .env.test.local
 .env.production.local
 yarn-error.log
-.gitkeep
 logs
 *.log
 *.log.*
